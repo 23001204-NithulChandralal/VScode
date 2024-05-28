@@ -1,0 +1,1 @@
+print("%4s %4s" % ('LOL', "LMAO"))

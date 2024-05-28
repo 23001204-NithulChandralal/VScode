@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leads Data</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- 23001204 Nithul Chandralal DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap5.min.css" rel="stylesheet"> <!-- 23001204 Nithul Chandralal DataTables CSS for Bootstrap 5 integration -->
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!-- 23001204 Nithul Chandralal Added a responsive navbar with dark theme and primary background color -->
+    <div class="container-fluid"> <!-- 23001204 Nithul Chandralal Provides a full-width container for the navbar -->
+        <a class="navbar-brand" href="#">SuiteCRM Client</a> <!-- 23001204 Nithul Chandralal Navbar brand name -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- 23001204 Nithul Chandralal Icon for toggling the navbar on small screens -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"> <!-- 23001204 Nithul Chandralal Collapsible section of the navbar -->
+            <ul class="navbar-nav ms-auto"> <!-- 23001204 Nithul Chandralal Navbar items aligned to the right -->
+                <li class="nav-item"> <!-- 23001204 Nithul Chandralal Each list item represents a link in the navbar -->
+                    <a class="nav-link" href="lead_home.html">Home</a> <!-- 23001204 Nithul Chandralal Navbar link to home page -->
+                </li>
+                <li class="nav-item"> <!-- 23001204 Nithul Chandralal Each list item represents a link in the navbar -->
+                    <a class="nav-link" href="#">About</a> <!-- 23001204 Nithul Chandralal Navbar link to about page -->
+                </li>
+                <li class="nav-item"> <!-- 23001204 Nithul Chandralal Each list item represents a link in the navbar -->
+                    <a class="nav-link" href="#">Contact</a> <!-- 23001204 Nithul Chandralal Navbar link to contact page -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5"> <!-- 23001204 Nithul Chandralal Container for the main content with top margin -->
+    <h1 class="text-center mb-4">Accounts Data</h1> <!-- 23001204 Nithul Chandralal Header for the table, centered and with bottom margin -->
+
+    <!-- Table Section -->
+    <div class="table-responsive"> <!-- 23001204 Nithul Chandralal Added responsive table wrapper to ensure table is scrollable on small screens -->
+        <table id="accountsTable" class="table table-striped table-bordered table-hover"> <!-- 23001204 Nithul Chandralal Styled table with striped rows, bordered cells, and hover effect -->
+            <thead class="thead-dark"> <!-- 23001204 Nithul Chandralal Styled table header with dark background -->
+                <tr>
+                    <!--  <th>ID</th> -->    <!-- 23001204 Nithul Chandralal To remove ID -->
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 23001204 Nithul Chandralal Data rows with example entries, removed ID column for cleaner presentation -->
+                <tr>
+                    <!-- <td>1258f6be-1216-b55d-6c24-64da3dc9e346</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Marlan</td>
+                    <td>Garrity</td>
+                    <td>Director Sales</td>
+                    <td>Dead</td>
+                    <td>Persistance</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>13d7e581-a4eb-6e8f-77a3-64da3df3a605</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Damonn</td>
+                    <td>Culpepper</td>
+                    <td>VP Sales</td>
+                    <td>Dead</td>
+                    <td>Alabama</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>14cc2bd3-9559-fc61-66cf-64da3dfe6eb6</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Asa</td>
+                    <td>Esteves</td>
+                    <td>Mgr Operations</td>
+                    <td>Converted</td>
+                    <td>Sunnyvale</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>15a127e9-4a37-0068-c202-64da3d0065f1</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Ollie</td>
+                    <td>Cendejas</td>
+                    <td>Mgr Operations</td>
+                    <td>Converted</td>
+                    <td>San Mateo</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>169b0b92-45c1-b77a-4394-64da3db86952</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Reinaldo</td>
+                    <td>Burkhalter</td>
+                    <td>VP Sales</td>
+                    <td>Converted</td>
+                    <td>San Francisco</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>171ed3ba-8b62-9f73-b070-64da3d632a9a</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Marla</td>
+                    <td>Armijo</td>
+                    <td>IT Developer</td>
+                    <td>Assigned</td>
+                    <td>San Jose</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>17f145a0-16cb-6f38-cd4c-64da3d2def9d</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Herschel</td>
+                    <td>Eldridge</td>
+                    <td>Senior Product Manager</td>
+                    <td>New</td>
+                    <td>Santa Monica</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>18f1d143-a31f-4eaf-7ec3-64da3d163445</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Matilda</td>
+                    <td>Gaeta</td>
+                    <td>President</td>
+                    <td>Dead</td>
+                    <td>San Jose</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>1dcfca7c-381f-4a2d-1e6f-64da3d1c0630</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Alphonso</td>
+                    <td>Miers</td>
+                    <td>VP Sales</td>
+                    <td>Dead</td>
+                    <td>Ohio</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>1e9cd572-ccc0-18dd-da87-64da3d17929f</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Myrna</td>
+                    <td>Barkman</td>
+                    <td>Director Sales</td>
+                    <td>Converted</td>
+                    <td>Salt Lake City</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>20e1af77-863d-5e56-118e-64da3d0fd471</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Stephan</td>
+                    <td>Overby</td>
+                    <td>Mgr Operations</td>
+                    <td>New</td>
+                    <td>Salt Lake City</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>213f4985-b4ed-afcf-c501-64da3dda54f3</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Richard</td>
+                    <td>Lizotte</td>
+                    <td>Senior Product Manager</td>
+                    <td>New</td>
+                    <td>Santa Fe</td>
+                </tr>
+                
+                <!-- <tr> --> <!-- 23001204 Nithul Chandralal TOGGLED THIS ROW because of NULL values -->
+                    <!-- <td>21a266cd-08a2-fa28-9ed9-653364eacc68</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                    <!-- <td>New</td> -->
+                    <!-- <td></td> -->
+                <!-- </tr> -->
+                
+                <tr>
+                    <!-- <td>2247c3fa-4751-c16d-f675-64da3da4a3fb</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Mavis</td>
+                    <td>Neil</td>
+                    <td>Director Sales</td>
+                    <td>Assigned</td>
+                    <td>Sunnyvale</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>2374ba58-f2b8-e151-5c92-64da3da81f11</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Joan</td>
+                    <td>Apgar</td>
+                    <td>Director Operations</td>
+                    <td>In Process</td>
+                    <td>San Mateo</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>258a1a79-cfcf-30ab-dbf3-64da3d4e9069</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Amos</td>
+                    <td>Rainey</td>
+                    <td>President</td>
+                    <td>Assigned</td>
+                    <td>Los Angeles</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>2690b29f-80a2-26cc-2d43-64da3de92e98</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Malik</td>
+                    <td>Durante</td>
+                    <td>Senior Product Manager</td>
+                    <td>New</td>
+                    <td>San Jose</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>27811617-296f-48b8-e525-64da3de869d5</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Frederick</td>
+                    <td>Breese</td>
+                    <td>VP Operations</td>
+                    <td>Dead</td>
+                    <td>Santa Monica</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>2a681e23-9d84-11e8-b8f9-64da3ddd0689</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Domenic</td>
+                    <td>Quintanilla</td>
+                    <td>Director Operations</td>
+                    <td>Converted</td>
+                    <td>Los Angeles</td>
+                </tr>
+                
+                <tr>
+                    <!-- <td>2c360a5a-4351-bd86-39d8-64da3de4c7a8</td> --> <!-- 23001204 Nithul Chandralal Removed ID column -->
+                    <td>Mauro</td>
+                    <td>Withrow</td>
+                    <td>Director Operations</td>
+                    <td>In Process</td>
+                    <td>Santa Monica</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Optional: Include Bootstrap JS, Popper.js, and DataTables JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- 23001204 Nithul Chandralal Bootstrap 5 JS for core functionality -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> <!-- 23001204 Nithul Chandralal Bootstrap 5 JS for tooltips and popovers -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script> <!-- 23001204 Nithul Chandralal Bootstrap 5 JS for Bootstrap components -->
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script> <!-- 23001204 Nithul Chandralal DataTables JS for adding table functionalities -->
+<script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"></script> <!-- 23001204 Nithul Chandralal DataTables Bootstrap 5 JS for Bootstrap integration -->
+
+<script>
+    $(document).ready(function() {
+        $('#accountsTable').DataTable(); <!-- 23001204 Nithul Chandralal Initialize DataTables -->
+    });
+</script>
+
+</body>
+</html>

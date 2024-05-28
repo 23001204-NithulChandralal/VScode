@@ -1,0 +1,80 @@
+#main-title {
+  color: blue;
+}
+
+#module-list {
+  background-color: lightgrey;
+}
+
+h3 {
+  font-style: italic;
+}
+
+.xx-large-600 {
+  font-size: xx-large;
+  font-weight: 600;
+  font-style: italic;
+}
+
+a[href*="rp.edu.sg"] {
+    color: red; 
+}
+
+
+section p {
+    line-height: 1.6;
+}
+
+SS
+a:hover {
+    color: purple; 
+}
+
+p::first-letter {
+    text-decoration: underline double;
+    color: inherit; 
+}
+
+p:not(.exclude-letter-m)::first-letter {
+    text-decoration: underline double;
+    color: inherit; 
+}
+
+
+
+/* Style for table */
+table {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style for table cells */
+td, th {
+    border: 1px solid grey; 
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style for table headers */
+th {
+    background-color: lightgrey;
+    text-transform: uppercase;
+}
+
+
+/* Flexbox for list items */
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Display list items in one column */
+}
+
+.flex-container li {
+  flex: 1;
+  margin-bottom: 10px; /* Additional 10px spacing between list items */
+}
+
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Lead</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!-- 23001204 Nithul Chandralal Added a responsive navbar with dark theme and primary background color -->
+    <div class="container-fluid"> <!-- 23001204 Nithul Chandralal Provides a full-width container for the navbar -->
+        <a class="navbar-brand" href="#">SuiteCRM Client</a> <!-- 23001204 Nithul Chandralal Navbar brand name -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- 23001204 Nithul Chandralal Icon for toggling the navbar on small screens -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"> <!-- 23001204 Nithul Chandralal Collapsible section of the navbar -->
+            <ul class="navbar-nav ms-auto"> <!-- 23001204 Nithul Chandralal Navbar items aligned to the right -->
+                <li class="nav-item"> <!-- 23001204 Nithul Chandralal Each list item represents a link in the navbar -->
+                    <a class="nav-link" href="lead_home.html">Home</a> <!-- 23001204 Nithul Chandralal Navbar link to home page -->
+                </li>
+                <li class="nav-item"> <!-- 23001204 Nithul Chandralal Each list item represents a link in the navbar -->
+                    <a class="nav-link" href="#">About</a> <!-- 23001204 Nithul Chandralal Navbar link to about page -->
+                </li>
+                <li class="nav-item"> <!-- 23001204 Nithul Chandralal Each list item represents a link in the navbar -->
+                    <a class="nav-link" href="#">Contact</a> <!-- 23001204 Nithul Chandralal Navbar link to contact page -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5"> <!-- 23001204 Nithul Chandralal Container for the main content with top margin -->
+    <h2 class="text-center mb-4">Add Account</h2> <!-- 23001204 Nithul Chandralal Header for the form, centered and with bottom margin -->
+    <div class="row justify-content-center"> <!-- 23001204 Nithul Chandralal Center the form horizontally -->
+        <div class="col-md-6"> <!-- 23001204 Nithul Chandralal Define the column size for medium and larger screens -->
+            <form action="{{ url_for('add_lead') }}" method="post">
+                <div class="form-group mb-3"> <!-- 23001204 Nithul Chandralal Form group with bottom margin -->
+                    <label for="firstName">First Name:</label> <!-- 23001204 Nithul Chandralal Label for the first name field -->
+                    <input type="text" class="form-control" id="firstName" name="firstName" required> <!-- 23001204 Nithul Chandralal Input field for first name -->
+                </div>
+                <div class="form-group mb-3"> <!-- 23001204 Nithul Chandralal Form group with bottom margin -->
+                    <label for="lastName">Last Name:</label> <!-- 23001204 Nithul Chandralal Label for the last name field -->
+                    <input type="text" class="form-control" id="lastName" name="lastName" required> <!-- 23001204 Nithul Chandralal Input field for last name -->
+                </div>
+                <div class="form-group mb-3"> <!-- 23001204 Nithul Chandralal Form group with bottom margin -->
+                    <label for="title">Title:</label> <!-- 23001204 Nithul Chandralal Label for the title field -->
+                    <select class="form-control" id="title" name="title" required> <!-- 23001204 Nithul Chandralal Dropdown for title selection -->
+                        <option value="">Select title</option>
+                        <option value="Director Operations">Director Operations</option>
+                        <option value="Director Sales">Director Sales</option>
+                        <option value="IT Developer">IT Developer</option>
+                        <option value="Mgr Operations">Mgr Operations</option>
+                        <option value="President">President</option>
+                        <option value="Senior Product Manager">Senior Product Manager</option>
+                        <option value="VP Operations">VP Operations</option>
+                        <option value="VP Sales">VP Sales</option>
+                    </select>
+                </div>
+                <div class="form-group mb-3"> <!-- 23001204 Nithul Chandralal Form group with bottom margin -->
+                    <label for="status">Status:</label> <!-- 23001204 Nithul Chandralal Label for the status field -->
+                    <select class="form-control" id="status" name="status" required> <!-- 23001204 Nithul Chandralal Dropdown for status selection -->
+                        <option value="">Select status</option>
+                        <option value="Converted">Converted</option>
+                        <option value="In Process">In Process</option>
+                        <option value="Dead">Dead</option>
+                        <option value="Assigned">Assigned</option>
+                        <option value="New">New</option>
+                    </select>
+                </div>
+                <div class="form-group mb-3"> <!-- 23001204 Nithul Chandralal Form group with bottom margin -->
+                    <label for="city">City:</label> <!-- 23001204 Nithul Chandralal Label for the city field -->
+                    <input type="text" class="form-control" id="city" name="city" required> <!-- 23001204 Nithul Chandralal Input field for city -->
+                </div>
+                <div class="text-center"> <!-- 23001204 Nithul Chandralal Center the submit button -->
+                    <button type="submit" class="btn btn-primary">Submit</button> <!-- 23001204 Nithul Chandralal Primary styled submit button -->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Optional: Include Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- 23001204 Nithul Chandralal Bootstrap 5 JS for core functionality -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> <!-- 23001204 Nithul Chandralal Bootstrap 5 JS for tooltips and popovers -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script> <!-- 23001204 Nithul Chandralal Bootstrap 5 JS for Bootstrap components -->
+
+</body>
+</html>

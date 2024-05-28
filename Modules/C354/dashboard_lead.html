@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- 23001204 Nithul Chandralal: Added Chart.js library to create and manage charts. -->
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!-- 23001204 Nithul Chandralal Added a responsive navbar with dark theme and primary background color -->
+    <div class="container-fluid"> <!-- 23001204 Nithul Chandralal Provides a full-width container for the navbar -->
+        <a class="navbar-brand" href="#">SuiteCRM Client</a> <!-- 23001204 Nithul Chandralal Navbar brand name -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- 23001204 Nithul Chandralal Icon for toggling the navbar on small screens -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"> <!-- 23001204 Nithul Chandralal Collapsible section of the navbar -->
+            <ul class="navbar-nav ms-auto"> <!-- 23001204 Nithul Chandralal Navbar items aligned to the right -->
+                <li class="nav-item"> <!-- 23001204 Nithul Chandralal Each list item represents a link in the navbar -->
+                    <a class="nav-link" href="lead_home.html">Home</a> <!-- 23001204 Nithul Chandralal Navbar link to home page -->
+                </li>
+                <li class="nav-item"> <!-- 23001204 Nithul Chandralal Each list item represents a link in the navbar -->
+                    <a class="nav-link" href="#">About</a> <!-- 23001204 Nithul Chandralal Navbar link to about page -->
+                </li>
+                <li class="nav-item"> <!-- 23001204 Nithul Chandralal Each list item represents a link in the navbar -->
+                    <a class="nav-link" href="#">Contact</a> <!-- 23001204 Nithul Chandralal Navbar link to contact page -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 23001204 Nithul Chandralal: Added a responsive navbar using Bootstrap. The navbar includes a brand name and links for Home, About, and Contact pages. -->
+
+<!-- Dashboard Content -->
+<div class="container mt-4">
+    <!-- 23001204 Nithul Chandralal: The container class centers the content and provides responsive fixed-width container. 
+    The mt-4 class (margin-top 4) adds a margin at the top of the container. -->
+    <div class="row">
+        <!-- 23001204 Nithul Chandralal: The row class creates a horizontal group of columns. -->
+        <!-- Total Accounts -->
+        <div class="col-md-4">
+            <!-- 23001204 Nithul Chandralal: The col-md-4 class creates a column that spans 4 out of 12 parts on medium and larger screens. -->
+            <div class="card text-center bg-info text-white mb-4">
+                <!-- 23001204 Nithul Chandralal: The card class styles the element as a card. 
+                The text-center class centers the text inside the card. 
+                The bg-info class sets the background color to info (blue). 
+                The text-white class sets the text color to white. 
+                The mb-4 class (margin-bottom 4) adds a margin at the bottom of the card. -->
+                <div class="card-body">
+                    <!-- 23001204 Nithul Chandralal: The card-body class provides padding and styles the main content of the card. -->
+                    <h4 class="card-title">Total Accounts</h4>
+                    <!-- 23001204 Nithul Chandralal: The card-title class styles the card's title. -->
+                    <h2 class="card-text" id="total-accounts">150</h2>
+                    <!-- 23001204 Nithul Chandralal: The card-text class styles the card's text. -->
+                    <p>Total number of active accounts.</p>
+                    <!-- 23001204 Nithul Chandralal: A paragraph element for additional text. -->
+                </div>
+            </div>
+        </div>
+        <!-- 23001204 Nithul Chandralal: Created a card to display the total number of accounts using Bootstrap classes for styling. -->
+
+        <!-- Total Salaries Paid -->
+        <div class="col-md-4">
+            <!-- 23001204 Nithul Chandralal: The col-md-4 class creates a column that spans 4 out of 12 parts on medium and larger screens. -->
+            <div class="card text-center bg-success text-white mb-4">
+                <!-- 23001204 Nithul Chandralal: The card class styles the element as a card. 
+                The text-center class centers the text inside the card. 
+                The bg-success class sets the background color to success (green). 
+                The text-white class sets the text color to white. 
+                The mb-4 class (margin-bottom 4) adds a margin at the bottom of the card. -->
+                <div class="card-body">
+                    <!-- 23001204 Nithul Chandralal: The card-body class provides padding and styles the main content of the card. -->
+                    <h4 class="card-title">Total Salaries Paid</h4>
+                    <!-- 23001204 Nithul Chandralal: The card-title class styles the card's title. -->
+                    <h2 class="card-text" id="total-salaries">$500,000</h2>
+                    <!-- 23001204 Nithul Chandralal: The card-text class styles the card's text. -->
+                    <p>Total amount of salaries paid this month.</p>
+                    <!-- 23001204 Nithul Chandralal: A paragraph element for additional text. -->
+                </div>
+            </div>
+        </div>
+        <!-- 23001204 Nithul Chandralal: Created a card to display the total salaries paid using Bootstrap classes for styling. -->
+
+        <!-- New Recruits -->
+        <div class="col-md-4">
+            <!-- 23001204 Nithul Chandralal: The col-md-4 class creates a column that spans 4 out of 12 parts on medium and larger screens. -->
+            <div class="card text-center bg-warning text-white mb-4">
+                <!-- 23001204 Nithul Chandralal: The card class styles the element as a card. 
+                The text-center class centers the text inside the card. 
+                The bg-warning class sets the background color to warning (yellow). 
+                The text-white class sets the text color to white. 
+                The mb-4 class (margin-bottom 4) adds a margin at the bottom of the card. -->
+                <div class="card-body">
+                    <!-- 23001204 Nithul Chandralal: The card-body class provides padding and styles the main content of the card. -->
+                    <h4 class="card-title">New Recruits</h4>
+                    <!-- 23001204 Nithul Chandralal: The card-title class styles the card's title. -->
+                    <h2 class="card-text" id="new-recruits">20</h2>
+                    <!-- 23001204 Nithul Chandralal: The card-text class styles the card's text. -->
+                    <p>Number of new recruits this month.</p>
+                    <!-- 23001204 Nithul Chandralal: A paragraph element for additional text. -->
+                </div>
+            </div>
+        </div>
+        <!-- 23001204 Nithul Chandralal: Created a card to display the number of new recruits using Bootstrap classes for styling. -->
+    </div>
+    
+    <div class="row">
+        <!-- 23001204 Nithul Chandralal: The row class creates a horizontal group of columns. -->
+        <!-- Accounts Overview -->
+        <div class="col-md-6">
+            <!-- 23001204 Nithul Chandralal: The col-md-6 class creates a column that spans 6 out of 12 parts on medium and larger screens. -->
+            <div class="card mb-4">
+                <!-- 23001204 Nithul Chandralal: The card class styles the element as a card. 
+                The mb-4 class (margin-bottom 4) adds a margin at the bottom of the card. -->
+                <div class="card-header bg-primary text-white">Accounts Overview</div>
+                <!-- 23001204 Nithul Chandralal: The card-header class styles the header of the card. 
+                The bg-primary class sets the background color of the header to the primary color. 
+                The text-white class sets the text color to white. -->
+                <div class="card-body">
+                    <!-- 23001204 Nithul Chandralal: The card-body class provides padding and styles the main content of the card. -->
+                    <canvas id="accountsChart"></canvas>
+                    <!-- 23001204 Nithul Chandralal: The canvas element is used for rendering the chart using Chart.js. -->
+                </div>
+            </div>
+        </div>
+        <!-- 23001204 Nithul Chandralal: Created a card to display the Accounts Overview chart using Chart.js. The chart is embedded in a canvas element. -->
+
+        <!-- Salaries Overview -->
+        <div class="col-md-6">
+            <!-- 23001204 Nithul Chandralal: The col-md-6 class creates a column that spans 6 out of 12 parts on medium and larger screens. -->
+            <div class="card mb-4">
+                <!-- 23001204 Nithul Chandralal: The card class styles the element as a card. 
+                The mb-4 class (margin-bottom 4) adds a margin at the bottom of the card. -->
+                <div class="card-header bg-primary text-white">Salaries Overview</div>
+                <!-- 23001204 Nithul Chandralal: The card-header class styles the header of the card. 
+                The bg-primary class sets the background color of the header to the primary color. 
+                The text-white class sets the text color to white. -->
+                <div class="card-body">
+                    <!-- 23001204 Nithul Chandralal: The card-body class provides padding and styles the main content of the card. -->
+                    <canvas id="salariesChart"></canvas>
+                    <!-- 23001204 Nithul Chandralal: The canvas element is used for rendering the chart using Chart.js. -->
+                </div>
+            </div>
+        </div>
+        <!-- 23001204 Nithul Chandralal: Created a card to display the Salaries Overview chart using Chart.js. The chart is embedded in a canvas element. -->
+    </div>
+    
+    <div class="row">
+        <!-- 23001204 Nithul Chandralal: The row class creates a horizontal group of columns. -->
+        <!-- Recent Accounts -->
+        <div class="col-md-6">
+            <!-- 23001204 Nithul Chandralal: The col-md-6 class creates a column that spans 6 out of 12 parts on medium and larger screens. -->
+            <div class="card mb-4">
+                <!-- 23001204 Nithul Chandralal: The card class styles the element as a card. 
+                The mb-4 class (margin-bottom 4) adds a margin at the bottom of the card. -->
+                <div class="card-header bg-primary text-white">Recent Accounts</div>
+                <!-- 23001204 Nithul Chandralal: The card-header class styles the header of the card. 
+                The bg-primary class sets the background color of the header to the primary color. 
+                The text-white class sets the text color to white. -->
+                <div class="card-body">
+                    <!-- 23001204 Nithul Chandralal: The card-body class provides padding and styles the main content of the card. -->
+                    <table class="table table-striped">
+                        <!-- 23001204 Nithul Chandralal: The table class styles the element as a table. 
+                        The table-striped class adds zebra-striping to the table rows. -->
+                        <thead>
+                            <!-- 23001204 Nithul Chandralal: The thead element represents the header of the table. -->
+                            <tr>
+                                <th>Account Name</th>
+                                <!-- 23001204 Nithul Chandralal: The th element represents a header cell in the table. -->
+                                <th>Status</th>
+                                <th>Created Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recent-accounts">
+                            <!-- 23001204 Nithul Chandralal: The tbody element represents the body of the table where data will be dynamically filled. -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- 23001204 Nithul Chandralal: Created a table to display recent accounts. The table header includes columns for Account Name, Status, and Created Date. Data will be dynamically filled using JavaScript. -->
+
+        <!-- Recent Recruits -->
+        <div class="col-md-6">
+            <!-- 23001204 Nithul Chandralal: The col-md-6 class creates a column that spans 6 out of 12 parts on medium and larger screens. -->
+            <div class="card mb-4">
+                <!-- 23001204 Nithul Chandralal: The card class styles the element as a card. 
+                The mb-4 class (margin-bottom 4) adds a margin at the bottom of the card. -->
+                <div class="card-header bg-primary text-white">Recent Recruits</div>
+                <!-- 23001204 Nithul Chandralal: The card-header class styles the header of the card. 
+                The bg-primary class sets the background color of the header to the primary color. 
+                The text-white class sets the text color to white. -->
+                <div class="card-body">
+                    <!-- 23001204 Nithul Chandralal: The card-body class provides padding and styles the main content of the card. -->
+                    <table class="table table-striped">
+                        <!-- 23001204 Nithul Chandralal: The table class styles the element as a table. 
+                        The table-striped class adds zebra-striping to the table rows. -->
+                        <thead>
+                            <!-- 23001204 Nithul Chandralal: The thead element represents the header of the table. -->
+                            <tr>
+                                <th>Name</th>
+                                <!-- 23001204 Nithul Chandralal: The th element represents a header cell in the table. -->
+                                <th>Position</th>
+                                <th>Joined Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recent-recruits">
+                            <!-- 23001204 Nithul Chandralal: The tbody element represents the body of the table where data will be dynamically filled. -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- 23001204 Nithul Chandralal: Created a table to display recent recruits. The table header includes columns for Name, Position, and Joined Date. Data will be dynamically filled using JavaScript. -->
+    </div>
+</div>
+
+<!-- Optional: Include Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- 23001204 Nithul Chandralal: Included jQuery library for handling JavaScript functionalities. -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<!-- 23001204 Nithul Chandralal: Included Popper.js for managing poppers (tooltips, popovers) in Bootstrap. -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- 23001204 Nithul Chandralal: Included Bootstrap JS for enabling Bootstrap's interactive components. -->
+
+<script>
+
+// Used ChatGPT to get code to create chart as i am unable to do so as i am not able to access my Virtual Machine
+
+
+// 23001204 Nithul Chandralal - Script to initialize charts and fill in the data dynamically
+document.addEventListener('DOMContentLoaded', function () {
+    // Accounts Chart
+    var ctx = document.getElementById('accountsChart').getContext('2d');
+    var accountsChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May'],
+            datasets: [{
+                label: 'Number of Accounts',
+                data: [20, 30, 40, 50, 60],
+                backgroundColor: 'rgba(54, 162, 235, 0.6)'
+            }]
+        }
+    });
+    // 23001204 Nithul Chandralal: Initialized a bar chart for Accounts Overview using Chart.js. The chart displays the number of accounts for each month from January to May.
+
+    // Salaries Chart
+    var ctx2 = document.getElementById('salariesChart').getContext('2d');
+    var salariesChart = new Chart(ctx2, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May'],
+            datasets: [{
+                label: 'Total Salaries Paid',
+                data: [100000, 120000, 150000, 180000, 200000],
+                borderColor: 'rgba(255, 99, 132, 1)',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                fill: true
+            }]
+        }
+    });
+    // 23001204 Nithul Chandralal: Initialized a line chart for Salaries Overview using Chart.js. The chart displays the total salaries paid each month from January to May.
+
+    // Fill in Recent Accounts and Recent Recruits tables with data from JSON
+    var recentAccounts = [
+        {name: 'Account A', status: 'Active', created_date: '2024-01-15'},
+        {name: 'Account B', status: 'Inactive', created_date: '2024-02-20'}
+    ];
+    var recentRecruits = [
+        {name: 'John Doe', position: 'Software Engineer', joined_date: '2024-03-01'},
+        {name: 'Jane Smith', position: 'Data Analyst', joined_date: '2024-03-05'}
+    ];
+
+    var recentAccountsTable = document.getElementById('recent-accounts');
+    recentAccounts.forEach(function(account) {
+        var row = `<tr>
+                        <td>${account.name}</td>
+                        <td>${account.status}</td>
+                        <td>${account.created_date}</td>
+                    </tr>`;
+        recentAccountsTable.innerHTML += row;
+    });
+    // 23001204 Nithul Chandralal: Populated the Recent Accounts table with data using JavaScript. The data includes account names, statuses, and creation dates.
+
+    var recentRecruitsTable = document.getElementById('recent-recruits');
+    recentRecruits.forEach(function(recruit) {
+        var row = `<tr>
+                        <td>${recruit.name}</td>
+                        <td>${recruit.position}</td>
+                        <td>${recruit.joined_date}</td>
+                    </tr>`;
+        recentRecruitsTable.innerHTML += row;
+    });
+    // 23001204 Nithul Chandralal: Populated the Recent Recruits table with data using JavaScript. The data includes recruit names, positions, and joining dates.
+});
+</script>
+
+</body>
+</html>

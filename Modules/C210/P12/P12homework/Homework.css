@@ -1,0 +1,9 @@
+.highlight {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="homework.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcome-title">Welcome to My Portfolio</h1>
+    </header>
+
+    <div id="content">
+        <h2>My Skills</h2>
+        <p id="skill-html">HTML</p>
+        <p id="skill-css">CSS</p>
+        <p id="skill-js">JavaScript</p>
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Skills Used</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Project 1</td>
+                <td>Description of Project 1</td>
+                <td>HTML, CSS</td>
+                <td>1 semester</td>
+            </tr>
+            <tr>
+                <td colspan="3">Additional information about Project 1</td>
+            </tr>
+            <tr>
+                <td>Project 2</td>
+                <td>Description of Project 2</td>
+                <td>JavaScript, PHP</td>
+                <td>2 semesters</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <img id="profile-image" src="profile.jpg" alt="Profile Image" style="width: 300px; height: 200px;">
+
+    <button id="btnToggleProfileImage">Toggle Profile Image</button>
+
+    <footer>
+        <p>Contact: <span id="email">student@example.com</span></p>
+        <p id="footer-time">Last Updated: </p>
+    </footer>
+
+
+    <button id="btnChangeTheme">Change Dark Theme</button>
+    <script src="Homework.js"></script>
+</body>
+</html>

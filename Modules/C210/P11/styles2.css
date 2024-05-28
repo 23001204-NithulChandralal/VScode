@@ -1,0 +1,41 @@
+.important {
+    font-weight: bold;
+    color: red;
+}
+.xx-large-600{
+    font-size: xx-large;
+    font-weight: 600;
+    font-style: italic;
+    color:blue;
+    background-color: blueviolet;
+}
+a[href^="http://"]{color: chocolate}
+
+div p{
+    line-height: 1.6;
+}
+a:hover {color: rgb(255, 105, 180);
+    font-size:  50px;
+    font-family: fantasy
+    
+}
+p::first-letter{
+    text-decoration: underline;
+    font-size:50px ;
+    text-decoration-style: double;
+}
+.recipe-list { 
+    margin: 20px; 
+    border: 5px; 
+    padding: 30px; 
+    box-sizing: border-box; 
+    background-color: antiquewhite; 
+}
+table{width: 100%;
+margin: 20px 0;/* 20px above and below, 0 at the slide */
+box-sizing: border-box;
+}
+
+th td{border:1px solid coral;
+padding: 10px;
+text-align:left;}

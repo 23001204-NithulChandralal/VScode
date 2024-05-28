@@ -1,0 +1,96 @@
+h1 {
+	text-align: center;
+	color: navy blue;
+}
+
+
+#intro {
+	background-color: lightgrey;
+}
+
+
+.highlight {
+	color: red; 
+}
+
+
+li {
+	border: 1px solid black;
+	list-style-type: square; 
+}
+
+
+h2 {
+	text-align: center;
+	font-weight: bold;;
+}
+
+
+.profile-card {
+	border: 2px solid black;
+	padding: 10px;
+	margin: 15px;
+	box-sizing: border-box;
+	background-color: lightgrey;
+}
+
+
+.footer-links {
+    	display: flex;
+    	justify-content: space-between;
+	background-color: lightgrey;
+	color: white;
+	padding: 10px 0;
+}
+
+
+
+.hobbies {
+    	display: flex;
+   	 flex-direction: row;
+   	 flex-wrap: wrap;
+
+}
+
+.hobbies div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header, .profile-card, footer, .hobbies, section {
+    margin-bottom: 20px; 
+}
+
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative; /* Position relative for the footer */
+    bottom: 0; /* Stick to bottom */
+    width: 100%;
+}
+
+
